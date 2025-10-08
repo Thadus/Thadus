@@ -307,9 +307,7 @@ public class PlayBuild extends JPanel  {
              try {
                if (sound) {
                introMusic = AudioSystem.getAudioInputStream(getClass().getResource("/thadusv1/Sounds/Intro.wav"));
-               clip1 = AudioSystem.getClip();
-               clip1.open(introMusic);
-               clip1.start();
+               
                }
            } catch (Exception e) {
            e.printStackTrace();
@@ -837,9 +835,7 @@ public class PlayBuild extends JPanel  {
         if (dogselect && sound && (response.contains("moveUp") || response.contains("moveDown") || response.contains("moveLeft") || response.contains("moveRight"))) {
             try {
                dogSound = AudioSystem.getAudioInputStream(getClass().getResource("/thadusv1/Sounds/dog.wav"));
-               Clip clip = AudioSystem.getClip();
-               clip.open(dogSound);
-               clip.start();
+              
            } catch (Exception e) {
            e.printStackTrace();
 }
@@ -849,9 +845,7 @@ public class PlayBuild extends JPanel  {
             try {
                carSound = AudioSystem.getAudioInputStream(getClass().getResource("/thadusv1/Sounds/car.wav"));
                
-               Clip clip = AudioSystem.getClip();
-               clip.open(carSound);
-               clip.start();
+               
            } catch (Exception e) {
            e.printStackTrace();
 }
@@ -860,9 +854,7 @@ public class PlayBuild extends JPanel  {
         if (jetselect && sound && (response.contains("moveUp") || response.contains("moveDown") || response.contains("moveLeft") || response.contains("moveRight"))) {
             try {
                jetSound = AudioSystem.getAudioInputStream(getClass().getResource("/thadusv1/Sounds/jet.wav"));
-               Clip clip = AudioSystem.getClip();
-               clip.open(jetSound);
-               clip.start();
+               
            } catch (Exception e) {
            e.printStackTrace();
 }
@@ -961,9 +953,7 @@ public class PlayBuild extends JPanel  {
             try {
                if(sound) {
                winMusic = AudioSystem.getAudioInputStream(getClass().getResource("/thadusv1/Sounds/Win.wav"));
-               Clip clip = AudioSystem.getClip();
-               clip.open(winMusic);
-               clip.start();
+               
                }
            } catch (Exception e) {
            e.printStackTrace();

@@ -78,7 +78,7 @@ public class Main {
     public static Image raw;
     public static JButton saveButton;
     public static Image raw6;
-    public static JToggleButton soundButton;
+  
     public static boolean sound = true;
     public static String sBFile;
     public static Image raw7;
@@ -354,55 +354,18 @@ public static void mainBuild() {
         
         
         
-        raw6 = new ImageIcon(Main.class.getResource("/thadusv1/Images/mute.png")).getImage();
-        Image scaled5 = raw6.getScaledInstance(20, 20, Image.SCALE_SMOOTH);
-        ImageIcon button2 = new ImageIcon(scaled5);
         
-        
-        raw7 = new ImageIcon(Main.class.getResource("/thadusv1/Images/sound.png")).getImage();
-        Image scaled6 = raw7.getScaledInstance(20, 20, Image.SCALE_SMOOTH);
-        ImageIcon button3 = new ImageIcon(scaled6);
-      
-    
-    
-    
-    
-        soundButton = new JToggleButton ();
-        
-        soundButton.setIcon(sound ? button2: button3);
-    
-    
-  
-    soundButton.setContentAreaFilled(false);
-    soundButton.setOpaque(false);
-    soundButton.setBorderPainted(false);
     
     
     
    
     
     
-    soundButton.setBorder(new RoundedBorder(5));
+    
         
         
     
-        soundButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                sound = !soundButton.isSelected();
-                
-                if (!sound) {
-                    clip1.stop();
-                    
-                    
-                } else {
-                    clip1.start();
-                    
-                }
-                       
-                soundButton.setIcon(sound ? button2: button3);
-            }
-        });
+        
         
         
         
@@ -418,7 +381,7 @@ public static void mainBuild() {
         
         buttonPanel.add(runButton);
         buttonPanel.add(clearButton);
-        buttonPanel.add(soundButton);
+        
         
         
         
