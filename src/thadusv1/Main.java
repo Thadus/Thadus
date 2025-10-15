@@ -47,7 +47,7 @@ import static thadusv1.While.conditionarray3;
 public class Main {
     private static JFrame frame;
     public static JFrame frame1;
-    public static JPanel loginPanel;
+    public static BLoginPanel loginPanel;
     private static JTextArea codeEditor;
     private static JTextArea outputConsole;
     private static JTextField inputField;

@@ -16,6 +16,8 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import javax.swing.BorderFactory;
 import javax.swing.Box;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
@@ -44,11 +46,10 @@ public class Login {
     public static User user1;
     
     public static void login() {
-       loginPanel = new JPanel();
-       loginPanel.setBackground(new Color(231,245,255));
-       loginPanel.setVisible(true);
-       
-       frame1.add(loginPanel, BorderLayout.CENTER);  
+        loginPanel = new BLoginPanel("/thadusv1/Images/background.png");
+        loginPanel.setVisible(true);
+        
+        frame1.add(loginPanel, BorderLayout.CENTER);  
        
         loginPanel.setLayout(new BoxLayout(loginPanel, BoxLayout.Y_AXIS));
 
